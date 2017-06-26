@@ -1,9 +1,9 @@
-# Stream readable
+# Readable Streams
 
 ## [non-flowing-mode](./non-flowing-mode.js):
 The default pattern for reading from a Readable stream consists of attaching a listener for the readable event that signals the availability of new data to read. Then, in a loop, we read all the data until the internal buffer is emptied. This can be done using the read() method, which synchronously reads from the internal buffer and returns a Buffer or String object representing the chunk of data. The read() method has the following signature:
 
->`eadable.read([size])`
+>`readable.read([size])`
 
 Using this approach, the data is explicitly pulled from the stream on demand.
 

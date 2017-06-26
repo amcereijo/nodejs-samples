@@ -4,4 +4,4 @@
 `npm install`
 
 ## Contents:
-* [streams-readable](./readable-streams/README.MD)
+* [readable-streams](./readable-streams/README.MD)
