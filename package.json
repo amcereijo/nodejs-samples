@@ -13,6 +13,7 @@
   "author": "acereijo <angel@fintonic.com>",
   "license": "ISC",
   "dependencies": {
-    "chance": "^1.0.10"
+    "chance": "^1.0.10",
+    "mkdirp": "^0.5.1"
   }
 }
