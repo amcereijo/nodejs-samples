@@ -26,7 +26,15 @@ stream1
 * [from2](https://npmjs.org/package/from2)
 
 
-## [Asyn controll flow sequential execution example](./pipe-async-sequential-execution.js)
+## [Async controll flow sequential execution example](./pipe-async-sequential-execution.js)
   Example of control an asyncronous sequential execution flow piping streams.
-  The example contacts a list o files in a destination file
+
+  The example concats a list o files in a destination file
 >`node ./pipe-async-sequential-execution.js ./destination.txt ./file1.txt ./file2.txt`
+
+
+## [Async controll flow unordered execution example](./pipe-async-unordered-execution.js)
+  Example of control an asyncronous unordered execution flow piping streams.
+
+  The example read a file with a list of urls and check if the url is online. It writes the result in a file called "urlList-results.txt"
+>`node ./pipe-async-unordered-execution.js ./urlList.txt`
