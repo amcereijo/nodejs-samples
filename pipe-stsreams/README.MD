@@ -46,4 +46,11 @@ stream1
   The example will limite the executions to only 1 at the same time.
 >`node ./pipe-async-unordered-limited-execution.js ./urlList.txt`
 
+## [Async controll flow ordered pararell execution example](./pipe-async-ordered-limited-execution.js)
+  Example of control an asyncronous ordered execution flow piping streams running the task in pararell.
 
+  The example read a file with a list of urls and check if the url is online. It writes the result in a file called "urlList-results.txt".
+  For the code we are using the package [through2-parallel](https://npmjs.org/package/through2-parallel).
+  The example will limite the executions to only 2 at the same time.
+  The urls will be written in the same order int the result file that it was in the original one
+>`node ./pipe-async-ordered-limited-execution.js ./urlList.txt`
