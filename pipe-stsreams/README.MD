@@ -38,3 +38,12 @@ stream1
 
   The example read a file with a list of urls and check if the url is online. It writes the result in a file called "urlList-results.txt"
 >`node ./pipe-async-unordered-execution.js ./urlList.txt`
+
+## [Async controll flow unordered pararell execution example](./pipe-async-unordered-limited-execution.js)
+  Example of control an asyncronous unordered execution flow piping streams running the task in pararell.
+
+  The example read a file with a list of urls and check if the url is online. It writes the result in a file called "urlList-results.txt".
+  The example will limite the executions to only 1 at the same time.
+>`node ./pipe-async-unordered-limited-execution.js ./urlList.txt`
+
+
