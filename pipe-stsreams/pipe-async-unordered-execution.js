@@ -18,6 +18,7 @@ class ParallelStream extends stream.Transform {
     const endFunction = this._onComplete.bind(this);
     this.userTransform(chunk, enc, pushFunction, endFunction);
 
+    console.log('Runnning chunk ', chunk);
     done();
   }
 
@@ -64,10 +65,14 @@ function transformer(url, enc, push, done) {
   });
 };
 
+const startTime = Date.now();
 // read the file with the url
 fs.createReadStream(process.argv[2])
   // ensures outputing each line on a different chunk
   .pipe(split())
   .pipe(new ParallelStream(transformer))
   .pipe(fs.createWriteStream('urlList-results.txt')) //destination stream
-  .on('finish', () => console.log('All urls were checked'));
+  .on('finish', () => {
+    console.log('All urls were checked');
+    console.log(`Execution time : ${Date.now()-startTime}(ms)`);
+  });
