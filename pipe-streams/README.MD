@@ -54,3 +54,7 @@ stream1
   The example will limite the executions to only 2 at the same time.
   The urls will be written in the same order int the result file that it was in the original one
 >`node ./pipe-async-ordered-limited-execution.js ./urlList.txt`
+
+
+## [Patterns](./patterns/README.MD)
+Examples of patterns related with piping streams

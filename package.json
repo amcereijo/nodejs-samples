@@ -16,6 +16,7 @@
     "chance": "^1.0.10",
     "from2-array": "0.0.4",
     "mkdirp": "^0.5.1",
+    "multipipe": "^1.0.2",
     "request": "^2.81.0",
     "split": "^1.0.0",
     "through2": "^2.0.3",
