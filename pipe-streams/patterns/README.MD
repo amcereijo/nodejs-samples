@@ -12,3 +12,9 @@ A combined stream is usually a Duplex stream, which is built by connecting the f
 Forking strems means piping one single Readable stream into multiple Writable streams.
 
 >`node forking-streams.js ./example.txt`
+
+
+## [Merging Streams](./merging-streams.js)
+Merging strems means piping mutiple Readable streams into a one sigle Writable stream.
+
+>`node merging-streams.js ./example.txt ./example2.txt ./output.txt`
